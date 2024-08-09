@@ -30,15 +30,15 @@ This application extracts text from an image of a receipt using Optical Characte
 
 You can install the required Python packages using pip:
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 Or install them individually:
 
-\`\`\`bash
+```bash
 pip install pytesseract pillow pandas
-\`\`\`
+```
 
 ### 2. Install Tesseract OCR
 
@@ -52,17 +52,17 @@ pip install pytesseract pillow pandas
 
 If you have Homebrew installed, run:
 
-\`\`\`bash
+```bash
 brew install tesseract
-\`\`\`
+```
 
 #### **Linux:**
 
 Use your package manager to install Tesseract. For example, on Ubuntu:
 
-\`\`\`bash
+```bash
 sudo apt-get install tesseract-ocr
-\`\`\`
+```
 
 ## How to Run
 
@@ -70,9 +70,9 @@ sudo apt-get install tesseract-ocr
 
    Execute the `main.py` script. A file dialog will appear, allowing you to select the receipt image file.
 
-\`\`\`bash
+```bash
 python main.py
-\`\`\`
+```
 
 2. **Select the Image File:**
 
@@ -112,18 +112,18 @@ An Excel file with two columns: `Item` and `Cost`.
 
 If you encounter an error indicating that Tesseract is not found, ensure that Tesseract is correctly installed and added to your system's `PATH`. You can verify the installation by running:
 
-\`\`\`bash
+```bash
 tesseract --version
-\`\`\`
+```
 
 If Tesseract is not in your `PATH`, you can specify the path in your Python script:
 
-\`\`\`python
+```python
 import pytesseract
 
 # Set the tesseract_cmd to the path of your Tesseract executable
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-\`\`\`
+```
 
 ## License
 
